@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #010101;
+  color: #f1f1f1;
+  font-size: 100%;
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+  font-family: Montserrat, sans-serif;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:focus, a:active {
+  outline: none;
+}
+a:visited, a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.tik-tac-toe {
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#board {
+  padding: 40px;
+  border-collapse: collapse;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  width: 100%;
+  text-align: center;
+  color: #010101;
+}
+#board ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+#board ul li {
+  width: 110px;
+  height: 110px;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  background: white;
+  color: #010101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  line-height: 1.1;
+  flex-wrap: nowrap;
+}
+
+#reset-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 8px 16px;
+  color: #f1f1f1;
+  background: #010101;
+  border: 1px solid #f1f1f1;
+  border-radius: 6px;
+  margin-bottom: 60px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.x {
+  color: orange;
+}
+
+.o {
+  color: gray;
+}
